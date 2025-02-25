@@ -1,17 +1,21 @@
 {
-    "name": "Data Analysis Env",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
-    "settings": {
-      "python.pythonPath": "/usr/local/bin/python",
-      "jupyter.jupyterServerType": "local"
-    },
-    "extensions": [
-      "ms-python.python",
-      "ms-toolsai.jupyter"
-    ],
-    "forwardPorts": [8888],
-    "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "vscode"
-  }
+  "name": "Data Analysis Env",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python",
+    "jupyter.jupyterServerType": "local",
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "forwardPorts": [8888],
+  "postCreateCommand": "pip install -r requirements.txt && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*",
+  "remoteUser": "vscode",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+  ]
+}
