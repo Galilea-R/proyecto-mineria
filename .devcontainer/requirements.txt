@@ -1,0 +1,8 @@
+# requirements.txt
+jupyterlab
+kagglehub
+pandas
+numpy
+matplotlib
+scikit-learn
+ipykernel
