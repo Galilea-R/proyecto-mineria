@@ -10,14 +10,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
     sudo \
-    && rm -rf /var/lib/apt/lists/*}
+    openssh-client \
+    && rm -rf /var/lib/apt/lists/*
 
 # Create vscode user
 RUN useradd -m vscode && echo "vscode ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-# Install OpenSSH Client
-RUN -y openssh-client
-
 
 # Set user
 USER vscode
