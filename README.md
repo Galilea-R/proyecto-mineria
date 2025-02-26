@@ -1,3 +1,7 @@
 # proyecto-mineria
 
-Para correrlo se necesita la extension de Dev Containers de VsCode, una vez que se tenga usando la paleta de comandos le dan a Rebuild Container... 
+# Problema: 
+Predecir el rating del libro de un amigo.
+
+Método: regresión 
+
