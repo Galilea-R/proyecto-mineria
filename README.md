@@ -25,3 +25,9 @@ Otra cosa que se peude hacer es transformarlo en un vector de frecuencia de pala
 como ya definimos, usaremos random forest.
 ## predecir! 
 podemos usar libros similares para validar el modelo :) 
+
+# siguientes pasos hasta el 4-04-25
+
+1. Combinar nuevos datos con el dataset 
+2. Entrenar y evaluar un modelo para predecir Book_ratings_count
+3. Explorar la importancia de las nuevas features
