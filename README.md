@@ -1,11 +1,11 @@
-# proyecto-mineria
+# Proyecto-mineria
 
 # Problema: 
 Predecir el rating del libro de un amigo.
 
 Método: regresión 
 
-# next steps 
+# Siguientes pasos  
 Es un problema cold start ya que es un libro nuevo, de un autor nuevo y únicamente tenemos el libro en si. 
 Cosas que tenemos: 
 - Todo el texto del libro. 
@@ -21,12 +21,12 @@ Otra cosa que se peude hacer es transformarlo en un vector de frecuencia de pala
 | author_rating | publisher | publishing year | genre | language_code | sale_price | demas |
 | ------------- | --------- | --------------- | ----- | ------------- | ---------- | ----- |
 | Novice        | Unknown   | 2025            | tbd   | tbd           | tbd        | NaN   |
-## entrenar el modelo con todos los demas libros
+## Entrenar el modelo con todos los demas libros
 como ya definimos, usaremos random forest.
-## predecir! 
+## Predecir! 
 podemos usar libros similares para validar el modelo :) 
 
-# siguientes pasos hasta el 4-04-25
+# Siguientes pasos hasta el 4-04-25
 
 1. Combinar nuevos datos con el dataset 
 2. Entrenar y evaluar un modelo para predecir Book_ratings_count
